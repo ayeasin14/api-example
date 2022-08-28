@@ -1,0 +1,64 @@
+#contries-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+
+
+}
+
+.country {
+    background-color: lightgreen;
+    border: 2px solid lightsalmon;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+
+#country-details {
+    border: 2px solid lightgreen;
+    text-align: center;
+    padding: 20px;
+    background-color: lightsalmon;
+    /* position: fixed; */
+
+}
+
+
+.btn {
+    position: relative;
+    background-color: #ff7d56;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:after {
+    content: "";
+    background: #350b0b;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+    border-radius: 10px;
+}
+
+.btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
